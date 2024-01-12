@@ -3,7 +3,7 @@
   "version": "10.44.1",
   "private": true,
   "dependencies": {
-    "@trpc/client": "next",
+    "@trpc/client": "11.0.0-next-beta.193",
     "undici": "^5.14.0"
   },
   "devDependencies": {
