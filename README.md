@@ -1,19 +1,13 @@
-# A minimal working tRPC example
+```sh
+pnpm install
 
-Requires node 18 (for global fetch).
+# open AcmeAuth.ts
 
-## Playing around
+# See everything is broken
 
-```
-npm i
-npm run dev
-```
+# open tsconfig.json
 
-Try editing the ts files to see the type checking in action :)
+# disable declaration:true
 
-## Building
-
-```
-npm run build
-npm run start
+# see everything works (not ideal for people writing libraries for tRPC)
 ```
