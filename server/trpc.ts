@@ -3,6 +3,7 @@ import {
   applySimpleAcmeAuthMiddleware,
   createAcmeAuthMiddleware,
 } from './middlewares/AcmeAuth';
+export {  } from '@trpc/core'
 
 // import {} from '@trpc/core';
 const t = initTRPC.context<{ authToken: string | undefined }>().create();
