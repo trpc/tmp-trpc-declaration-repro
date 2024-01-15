@@ -35,6 +35,9 @@ importers:
       '@trpc/client':
         specifier: 11.0.0-alpha-tmp-export-from-main.208
         version: 11.0.0-alpha-tmp-export-from-main.208
+      '@trpc/core':
+        specifier: 11.0.0-alpha-tmp-export-from-main.208
+        version: 11.0.0-alpha-tmp-export-from-main.208
       '@trpc/server':
         specifier: 11.0.0-alpha-tmp-export-from-main.208
         version: 11.0.0-alpha-tmp-export-from-main.208
@@ -48,6 +51,9 @@ importers:
 
   server:
     dependencies:
+      '@trpc/core':
+        specifier: 11.0.0-alpha-tmp-export-from-main.208
+        version: 11.0.0-alpha-tmp-export-from-main.208
       '@trpc/server':
         specifier: 11.0.0-alpha-tmp-export-from-main.208
         version: 11.0.0-alpha-tmp-export-from-main.208
