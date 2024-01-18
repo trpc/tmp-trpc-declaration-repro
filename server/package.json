@@ -3,7 +3,7 @@
   "version": "10.44.1",
   "private": true,
   "dependencies": {
-    "@trpc/server": "11.0.0-alpha-tmp-export-from-main-nuke-core.214",
+    "@trpc/server": "11.0.0-alpha-tmp-export-from-main-nuke-core.233",
     "zod": "^3.0.0"
   },
   "devDependencies": {
