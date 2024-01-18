@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -32,12 +32,15 @@ importers:
 
   client:
     dependencies:
+      '@tanstack/react-query':
+        specifier: ^5.17.15
+        version: 5.17.15(react@18.2.0)
       '@trpc/client':
-        specifier: 11.0.0-alpha-tmp-export-from-main.208
-        version: 11.0.0-alpha-tmp-export-from-main.208
+        specifier: 11.0.0-alpha-tmp-export-from-main.211
+        version: 11.0.0-alpha-tmp-export-from-main.211
       '@trpc/server':
-        specifier: 11.0.0-alpha-tmp-export-from-main.208
-        version: 11.0.0-alpha-tmp-export-from-main.208
+        specifier: 11.0.0-alpha-tmp-export-from-main.211
+        version: 11.0.0-alpha-tmp-export-from-main.211
       undici:
         specifier: ^5.14.0
         version: 5.14.0
@@ -49,8 +52,8 @@ importers:
   server:
     dependencies:
       '@trpc/server':
-        specifier: 11.0.0-alpha-tmp-export-from-main.208
-        version: 11.0.0-alpha-tmp-export-from-main.208
+        specifier: 11.0.0-alpha-tmp-export-from-main.211
+        version: 11.0.0-alpha-tmp-export-from-main.211
       zod:
         specifier: ^3.0.0
         version: 3.0.0
@@ -366,20 +369,33 @@ packages:
     resolution: {integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==}
     dev: true
 
-  /@trpc/client@11.0.0-alpha-tmp-export-from-main.208:
-    resolution: {integrity: sha512-zrVGX6bWrr+PlHkfPuCjbbjLcHIiG5i0qXuZdHc4rlqEApJ9fCWJvPPhDMvwV96ek0xl6bYDkwjiRJ2YwPWWyQ==}
-    dependencies:
-      '@trpc/core': 11.0.0-alpha-tmp-export-from-main.208
+  /@tanstack/query-core@5.17.15:
+    resolution: {integrity: sha512-QURxpu77/ICA4d61aPvV7EcJ2MwmksxUejKBaq/xLcO2TUJAlXf4PFKHC/WxnVFI/7F1jeLx85AO3Vpk0+uBXw==}
     dev: false
 
-  /@trpc/core@11.0.0-alpha-tmp-export-from-main.208:
-    resolution: {integrity: sha512-qlkxn4qLfeLSpGOeN+la3ekYeldcRjj6jYRjk+etwTJ99J225sMtLeHpZzUvaMDZwq65ktnl7OYp6FkQVGyPIg==}
+  /@tanstack/react-query@5.17.15(react@18.2.0):
+    resolution: {integrity: sha512-9qur91mOihaUN7pXm6ioDtS+4qgkBcCiIaZyvi3lZNcQZsrMGCYZ+eP3hiFrV4khoJyJrFUX1W0NcCVlgwNZxQ==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.17.15
+      react: 18.2.0
     dev: false
 
-  /@trpc/server@11.0.0-alpha-tmp-export-from-main.208:
-    resolution: {integrity: sha512-WosxQ7BcZa1jGVlkMi3CbTpXfG0z8G5zsf57jyfFlkS12w6CptZ/d29cJmXT1yk2jbOSI+ZgjTEBFsZp90YFxQ==}
+  /@trpc/client@11.0.0-alpha-tmp-export-from-main.211:
+    resolution: {integrity: sha512-LmF1qsaE7lQD++CIL4QDrj2WK2RJ953lC9fRXy4ISN+C55lHYSXyoaMax0+60Tth9Hk0nuHGn/kKav0wsHx2cw==}
     dependencies:
-      '@trpc/core': 11.0.0-alpha-tmp-export-from-main.208
+      '@trpc/core': 11.0.0-alpha-tmp-export-from-main.211
+    dev: false
+
+  /@trpc/core@11.0.0-alpha-tmp-export-from-main.211:
+    resolution: {integrity: sha512-Bq/NdUsvWn6L/RLYokv5p7CnE1c7kGWipQPELgpatA16ukQMPTM3Pzxisr0Mcr7c+QPNd5eCKmsuRYZWfSd+gg==}
+    dev: false
+
+  /@trpc/server@11.0.0-alpha-tmp-export-from-main.211:
+    resolution: {integrity: sha512-Vs2MQYIuIvjmT/tJWVNB/6sS1mzHW/cDRAgprHZ+8Pspo6EE+C4anc85dAzhRfzwFHRq8CFMnMbIMwVZcBYA6g==}
+    dependencies:
+      '@trpc/core': 11.0.0-alpha-tmp-export-from-main.211
     dev: false
 
   /@types/node@18.16.16:
@@ -1283,6 +1299,10 @@ packages:
     resolution: {integrity: sha512-dwXFwByc/ajSV6m5bcKAPwe4yDDF6D614pxmIi5odytzxRlwqF6nwoiCek80Ixc7Cvma5awClxrzFtxCQvcM8w==}
     dev: true
 
+  /js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
   /js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
@@ -1349,6 +1369,13 @@ packages:
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
+
+  /loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
 
   /map-stream@0.1.0:
     resolution: {integrity: sha512-CkYQrPYZfWnu/DAmVCpTSX/xHpKZ80eKh2lAkyA6AJTef6bW+6JpbQZN5rofum7da+SyN1bi5ctTm+lTfcCW3g==}
@@ -1576,6 +1603,13 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
+
+  /react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
 
   /read-pkg@3.0.0:
     resolution: {integrity: sha512-BLq/cCO9two+lBgiTYNqD6GdtK8s4NpaWrl6/rCO9w0TUS8oJl7cmToOZfRYllKTISY6nt1U7jQ53brmKqY6BA==}
