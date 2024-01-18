@@ -3,8 +3,8 @@
   "version": "10.44.1",
   "private": true,
   "dependencies": {
-    "@trpc/client": "11.0.0-alpha-tmp-export-from-main-nuke-core",
-    "@trpc/server": "11.0.0-alpha-tmp-export-from-main-nuke-core",
+    "@trpc/client": "11.0.0-alpha-tmp-export-from-main.208",
+    "@trpc/server": "11.0.0-alpha-tmp-export-from-main.208",
     "undici": "^5.14.0"
   },
   "devDependencies": {
